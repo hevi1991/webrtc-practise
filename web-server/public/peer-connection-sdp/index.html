@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peer Connection</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    video {
+      width: 160px;
+      height: 90px;
+    }
+
+    .video-wrapper {
+      display: flex;
+      justify-content: center;
+      background-color: #242424;
+      height: 90px;
+    }
+
+    .button-wrapper {
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    textarea {
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+<div>
+  <table border="1">
+    <tr>
+      <th>Local</th>
+      <th>Remote</th>
+    </tr>
+    <tr>
+      <td>
+        <div class="video-wrapper">
+          <video id="localvideo" autoplay playsinline></video>
+        </div>
+      </td>
+      <td>
+        <div class="video-wrapper">
+          <video id="remotevideo" autoplay playsinline></video>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th>Offer SDP</th>
+      <th>Answer SDP</th>
+    </tr>
+    <tr>
+      <td>
+        <textarea id="offer-sdp" disabled rows="10"></textarea>
+      </td>
+      <td>
+        <textarea id="answer-sdp" disabled rows="10"></textarea>
+      </td>
+    </tr>
+  </table>
+  <div class="button-wrapper">
+    <!-- 采集本地数据 -->
+    <button id="start">Start</button>
+    <!-- 启动RTCPeerConnection，进行本地与远程媒体协商 -->
+    <button id="call" disabled>Call</button>
+    <!-- 结束传输 -->
+    <button id="hangup" disabled>Hang Up</button>
+  </div>
+</div>
+<script src="./js/bower_components/webrtc-adapter/release/adapter.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

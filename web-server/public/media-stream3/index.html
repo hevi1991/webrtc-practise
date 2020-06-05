@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Stream</title>
+    <!-- 滤镜 -->
+    <link href="./css/filter.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- 
+      autoplay 自动播放
+      playsinline 网页内播发 
+    -->
+    <div style="margin-bottom: 5px;">
+      <div>
+        <label>Audio input device: </label>
+        <select id="audioinput"></select>
+      </div>
+      <div>
+        <label>Audio output device: </label>
+        <select id="audiooutput"></select>
+      </div>
+      <div>
+        <label>Video input device: </label>
+        <select id="videoinput"></select>
+      </div>
+      <div>
+        <!-- 滤镜 -->
+        <label>Filter: </label>
+        <select id="filter">
+          <option value="none">None</option>
+          <option value="blur">Blur</option>
+          <option value="grayscale">Grayscale</option>
+          <option value="invert">Invert</option>
+          <option value="sepia">Sepia</option>
+        </select>
+      </div>
+    </div>
+    <!-- 录制音频
+    <div>
+      <audio autoplay controls id="audioplayer"></audio>
+    </div> 
+    -->
+    <div>
+      <table>
+        <tr>
+          <td>
+            <video autoplay playsinline id="player"></video>
+          </td>
+          <td>
+            <video playsinline id="recplayer"></video>
+          </td>
+          <td>
+            <pre id="constraints" class="output"></pre>
+          </td>
+        </tr>
+        <tr>
+          <td><button id="record">Start Record</button></td>
+          <td><button id="recplay" disabled>Play</button></td>
+          <td><button id="download" disabled>Download</button></td>
+        </tr>
+      </table>
+    </div>
+    <!-- 截视频的图 -->
+    <div>
+      <button id="snapshot">Take a snapshot</button>
+    </div>
+    <div>
+      <canvas id="picture"></canvas>
+    </div>
+    <!-- adapterjs 适配主流浏览器 -->
+    <script src="./js/bower_components/webrtc-adapter/release/adapter.js"></script>
+    <script src="./js/client.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-container {
+  margin: 10px;
+}
+
+video {
+  width: 480px;
+  height: 270px;
+}
+
+table {
+  width: 100%;
+}
+
+#preview {
+  display: flex;
+}
+
+.chatroom-container {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatroom-container textarea {
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.video-container {
+  margin: 10px;
+  flex: 1;
+}

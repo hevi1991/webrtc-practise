@@ -1,0 +1,28 @@
+.none {
+  filter: none;
+  --webkit-filter: none;
+}
+
+.blur {
+  filter: blur(3px);
+  --webkit-filter: blur(3px);
+}
+
+.grayscale {
+  filter: grayscale(1);
+  --webkit-filter: grayscale(1);
+}
+
+.invert {
+  filter: invert(1);
+  --webkit-filter: invert(1);
+}
+
+.sepia {
+  filter: sepia(1);
+  --webkit-filter: sepia(1);
+}
+
+.output {
+  border: 1px solid;
+}

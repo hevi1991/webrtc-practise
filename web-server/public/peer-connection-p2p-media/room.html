@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peer Connection</title>
+  <link href="./css/main.css" rel="stylesheet">
+</head>
+<body>
+<div>
+  <div>
+    <button id="connserver">Connect Signal Server</button>
+    <button id="leave" disabled>Leave</button>
+  </div>
+  <div id="preview">
+    <table width="100%">
+      <tr>
+        <td>
+          <div>
+            <h2>
+              Local:
+              <select id="mediaselect">
+                <option value="video">Video and Audio</option>
+                <option value="screen">Screen</option>
+              </select>
+            </h2>
+            <video id="localvideo" autoplay playsinline></video>
+          </div>
+        </td>
+        <td>
+          <div>
+            <h2>Remote:</h2>
+            <video id="remotevideo" autoplay playsinline></video>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<script src="./js/bower_components/socket.io-client/dist/socket.io.js"></script>
+<script src="./js/bower_components/webrtc-adapter/release/adapter.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

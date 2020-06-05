@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peer Connection</title>
+  <style>
+    video {
+      width: 160px;
+      height: 90px;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <video id="localvideo" autoplay playsinline></video>
+  <video id="remotevideo" autoplay playsinline></video>
+  <div>
+    <!-- 采集本地数据 -->
+    <button id="start">Start</button>
+    <!-- 启动RTCPeerConnection，进行本地与远程媒体协商 -->
+    <button id="call" disabled>Call</button>
+    <!-- 结束传输 -->
+    <button id="hangup" disabled>Hang Up</button>
+  </div>
+</div>
+<script src="./js/bower_components/webrtc-adapter/release/adapter.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

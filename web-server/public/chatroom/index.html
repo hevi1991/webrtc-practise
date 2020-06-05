@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <fieldset>
+      <legend>Chat Room</legend>
+      <table>
+        <tr>
+          <td>
+            <label>Username: </label>
+          </td>
+          <td>
+            <input type="text" id="username" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>room: </label>
+          </td>
+          <td>
+            <input type="text" id="room" />
+            <button id="connect">Connect</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Content: </label>
+          </td>
+          <td>
+            <textarea id="output" disabled rows="10" cols="50"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Input: </label>
+          </td>
+          <td>
+            <textarea id="input" disabled rows="10" cols="50"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button id="send" disabled>Send</button>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <script
+      type="text/javascript"
+      src="./bower_components/socket.io-client/dist/socket.io.js"
+    ></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>

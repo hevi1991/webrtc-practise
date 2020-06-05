@@ -1,0 +1,75 @@
+.
+├── assets
+├── cert
+│   ├── example.com+6-key.pem
+│   └── example.com+6.pem
+├── example-http-server.js
+├── example-https-server.js
+└── web-server
+    ├── app.log
+    ├── cert
+    │   ├── example.com+6-key.pem
+    │   └── example.com+6.pem
+    ├── package-lock.json
+    ├── package.json
+    ├── public
+    │   ├── banwidth
+    │   │   ├── css
+    │   │   ├── index.html
+    │   │   └── js
+    │   │       └── main.js
+    │   ├── chat-data-channel
+    │   │   ├── css
+    │   │   ├── index.html
+    │   │   └── js
+    │   │       └── main.js
+    │   ├── chatroom
+    │   │   ├── css
+    │   │   ├── index.html
+    │   │   └── js
+    │   │       └── main.js
+    │   ├── device
+    │   │   ├── index.html
+    │   │   └── js
+    │   │       └── client.js
+    │   ├── media-stream
+    │   │   ├── css
+    │   │   ├── index.html
+    │   │   └── js
+    │   │       └── client.js
+    │   ├── media-stream2
+    │   │   ├── css
+    │   │   ├── index.html
+    │   │   └── js
+    │   │       └── client.js
+    │   ├── media-stream3
+    │   │   ├── css
+    │   │   ├── index.html
+    │   │   └── js
+    │   │       └── client.js
+    │   ├── media-stream4
+    │   │   ├── css
+    │   │   ├── index.html
+    │   │   └── js
+    │   │       └── client.js
+    │   ├── peer-connection
+    │   │   ├── index.html
+    │   │   └── js
+    │   │       └── main.js
+    │   ├── peer-connection-p2p-media
+    │   │   ├── css
+    │   │   ├── js
+    │   │   │   └── main.js
+    │   │   └── room.html
+    │   ├── peer-connection-sdp
+    │   │   ├── index.html
+    │   │   └── js
+    │   │       └── main.js
+    │   └── testCreateOffer
+    │       ├── index.html
+    │       └── js
+    │           └── main.js
+    ├── server-webrtc.js
+    └── server.js
+
+37 directories, 35 files
