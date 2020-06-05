@@ -36,11 +36,6 @@ const app = express();
 app.use(serveIndex("./public"));
 app.use(express.static("./public"));
 
-// http server
-const httpServer = http.createServer(app);
-httpServer.listen(HTTP_PORT, SERVER_HOST);
-console.log(`Server listening at http://${SERVER_HOST}:${HTTP_PORT}`);
-
 // https server
 const options = {
   key: fs.readFileSync("./cert/example.com+6-key.pem"),
