@@ -45,7 +45,7 @@ function createPeerConnection() {
         * username 用户名
         * credential 密码
         * */
-        "urls": "stun:192.168.1.106:3478",
+        "urls": `stun:${location.hostname}:3478`,
         "username": "bbb",
         "credential": "1234"
       }]
